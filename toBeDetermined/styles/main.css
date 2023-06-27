@@ -6,3 +6,10 @@ body {
     background-color: #fadadd;
     color: #210d00;
 }
+
+table, tr, th, td, caption {
+    border: 1px solid #210d00;
+    font-family: 'Courier New', Courier, monospace;
+    border-collapse: collapse;
+    padding: 0.5rem;
+}
