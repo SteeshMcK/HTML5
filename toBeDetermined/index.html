@@ -56,34 +56,81 @@
                     <caption>My favorite songs from my four favorite albums by The Cure</caption>
                     <thead>
                         <tr>
-                            <th>Album</th>
-                            <th>Song</th>
+                            <!-- next line creates an open cell that allows for row headings -->
+                            <!-- Scope is an attribute that helps assistive technology properly assess the page -->
+                            <th scope="col">Year</th>
+                            <th scope="col">Album</th>
+                            <th scope="col">Song</th>
                         </tr>
                     </thead>
                     <tbody></tbody>
                         <tr>
+                            <th scope="row">1985</th>
                             <td>The Head on the Door</td>
                             <td>In Between Days</td>
                         </tr>
                         <tr>
+                            <th scope="row">1987</th>
                             <td>Kiss Me Kiss Me Kiss Me</td>
                             <td>The Perfect Girl</td>
                         </tr>
                         <tr>
+                            <th scope="row">1989</th>
                             <td>Disintegration</td>
                             <td>Lullaby</td>
                         </tr>
                         <tr>
+                            <th scope="row">1992</th>
                             <td>Wish</td>
                             <td>Doing the Unstuck</td>
                         </tr>
                     </tbody>
                     <tfoot>
                         <tr>
-                            <td colspan="2">But honestly... EVERY CURE SONG IS MY FAVORITE!&#10084;</td>
+                            <td colspan="3">But honestly... EVERY CURE SONG IS MY FAVORITE!&#10084;</td>
                         </tr>
                     </tfoot>
                 </table>
+        </article>
+        <hr>
+        <article>
+            <h2> Contact Me</h2>
+            <form action="https://httpbin.org/get" method="get">
+                <p>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" name="firstName" id="firstName" placeholder="first name" autocomplete="on" required>
+                </p>
+                <p>
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" name="lastName" id="lastName" placeholder="last name" autocomplete="on" required>
+                </p>
+                <p>
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" placeholder="your secret" required>
+                </p>
+                <p>
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input type="tel" name="tel" id="tel" placeholder="5555555555" pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
+                </p>
+                <p>
+                    <label for="decade">Favorite Decade:</label>
+                    <input type="number" name="decade" id="decade" min="1900" max="2020" step="10" value="1980">
+                </p>
+                <p>
+                    <label for="coffee">Favorite Coffee:</label>
+                    <select name="coffee" id="coffee">
+                        <optgroup label="Drip">
+                            <option value="house drip">House Drip</option>
+                            <option value="iced">Iced</option>
+                        </optgroup>
+                        <optgroup label="Espresso">
+                            <option value="Caffè latte">Caffè Latte</option>
+                            <option value="Caffè Mocha">Caffè Mocha</option>
+                            <option value="Iced Large White Lavender Mocha with Oatmilk" selected>Iced Large White Lavender Mocha with Oatmilk</option>
+                        </optgroup>
+                    </select>
+                </p>
+            </form>
         </article>
         </main>
         <footer>
